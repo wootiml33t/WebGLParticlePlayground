@@ -1,0 +1,131 @@
+.controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.controlGroup {
+  margin: 15px 0;
+}
+
+.controlGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.rangeContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rangeContainer input[type="range"] {
+  flex: 1;
+}
+
+.rangeContainer span {
+  min-width: 40px;
+  text-align: right;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.colorContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.colorContainer input[type="color"] {
+  width: 50px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.select {
+  width: 100%;
+  padding: 5px;
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+.shapeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.shapeButton {
+  padding: 5px;
+  background: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.shapeButton:hover {
+  background: #444;
+}
+
+.shapeButton.selected {
+  background: #666;
+  border-color: #888;
+}
+
+/* Hover effects */
+input[type="range"]:hover,
+input[type="color"]:hover,
+.select:hover {
+  opacity: 0.8;
+}
+
+/* Focus effects */
+input:focus,
+.select:focus,
+.shapeButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.infoButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.infoButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
