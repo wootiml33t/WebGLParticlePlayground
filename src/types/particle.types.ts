@@ -9,7 +9,7 @@ export interface ParticleSettings {
   chunkSize: number;
   useBlending: boolean;
   shape: ParticleShape;
-  texture: string;
+  texture?: string;
 }
 
 export type ParticleShape =

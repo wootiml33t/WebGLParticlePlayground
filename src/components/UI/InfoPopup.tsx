@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import styles from "./InfoPopup.module.css";
 import ReactMarkdown from "react-markdown";
 

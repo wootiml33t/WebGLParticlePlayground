@@ -1,5 +1,9 @@
 import { create } from "zustand";
-import { ParticleState, ParticleSettings } from "../types/particle.types";
+import {
+  ParticleState,
+  ParticleSettings,
+  ParticleShape,
+} from "../types/particle.types";
 
 const defaultSettings: ParticleSettings = {
   count: 1000,
@@ -7,7 +11,7 @@ const defaultSettings: ParticleSettings = {
   speed: 0.5,
   spread: 1,
   color: "#ffffff",
-  shape: "sphere",
+  shape: "sphere" as ParticleShape,
   opacity: 0.6,
   useChunking: true,
   chunkSize: 1000,
